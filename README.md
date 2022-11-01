@@ -2,7 +2,7 @@
 
 1. [Problem](#problem)
 2. [Solution](#solution)
-3. [Conclusion](#conclusion)
+3. [Benefit](#benefit)
 4. [Hackathon Example](#hackathon-example)
 
 # Problem
@@ -42,9 +42,14 @@ To facilitate understanding between Business, Tech, and Machine. And to maximize
 
 ![Loosely-coupled microservices](diagram/loosely_coupled_microservices.drawio.png "Loosely-coupled microservices")
 
-# Conclusion
+# Benefit
 
-With this setup, Business experts can start cracking process problem right away instead of waiting for Tech experts to involve. Tech experts will have easier time manage and deploy orchestrated processes. Decoupled service workers encourage reusability, thus reducing rework. Furthermore, since deployment and communication friction is minimized, it's possible to commoditize and commercialize our processes, by offering the either the diagram (it's our IP!!!), or the service workers, or both.
+Frictionless deployment of orchestrated processes opens many possibilities:
+
+- Rapid identification of automation opportunities and development of such solution.
+- It's now possible for Business experts to modify current processes without back-and-forth with Tech experts to re-implement.
+- Encourage adoption of process orchestration, thus enable collecting and monitoring process metrics for further service optimization or hardening.
+- Possibility to containerize, commoditize, and commercialize processes by either offering the executable BPMN/DMN diagram (which itself is a form of program), the service workers (which can do useful task for any Orchestrator), or both.
 
 # Hackathon Example:
 
