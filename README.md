@@ -22,7 +22,7 @@ To facilliate understanding between Business, Tech, and Machine. And to maximize
   - Business experts are functionally writing code to Orchestrator using diagram.
   - All requirements must be expressed, and no more sneaky implementation. If it's implemented, it's expressed as a visual component in the diagram.
 
-![Processes as code](diagram\processes_as_code.png "Processes as code")
+![Processes as code](diagram/processes_as_code.png "Processes as code")
 
 ## 2. Loosely-coupled microservices
 
@@ -33,7 +33,7 @@ To facilliate understanding between Business, Tech, and Machine. And to maximize
   - It can be easily packaged as a container, since BPMN/DMN process encourages writing decoupled service
 - BPMN/DMN is just a configuration file, it can be easily version-controlled, packaged, modified, and deployed to any Orchestrator that can run BPMN/DMN (jBPM, Camunda, Activi ...)
 
-![Loosely-coupled microservices](diagram\loosely_coupled_microservices.drawio.png "Loosely-coupled microservices")
+![Loosely-coupled microservices](diagram/loosely_coupled_microservices.drawio.png "Loosely-coupled microservices")
 
 # Hackathon implementation:
 
@@ -43,7 +43,7 @@ To facilliate understanding between Business, Tech, and Machine. And to maximize
 - BPMN Diagram: Desktop Modeler ([download here](https://camunda.com/download/modeler/))
   - Simple diagram with automated task, human task, decision gateway
 
-![](diagram\diagram.svg)
+![](diagram/diagram.svg)
 
 - Service Workers:
   - Subscribe to Zeebee cluster to control process and perform task
