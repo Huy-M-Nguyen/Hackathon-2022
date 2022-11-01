@@ -1,3 +1,10 @@
+# Table of Content
+
+1. [Problem](#problem)
+2. [Solution](#solution)
+3. [Conclusion](#conclusion)
+4. [Hackathon Example](#hackathon-example)
+
 # Problem
 
 Software development is often a telephone game, where Business expert explains requirements to Tech, and Tech expert tries to implement it in the Machine language. For a simple software with well-defined goal and rarely-changed requirement, it's not a problem.
@@ -35,7 +42,13 @@ To facilitate understanding between Business, Tech, and Machine. And to maximize
 
 ![Loosely-coupled microservices](diagram/loosely_coupled_microservices.drawio.png "Loosely-coupled microservices")
 
-# Hackathon implementation:
+# Conclusion
+
+With this setup, Business experts can start cracking process problem right away instead of waiting for Tech experts to involve. Tech experts will have easier time manage and deploy orchestrated processes. Decoupled service workers encourage reusability, thus reducing rework. Furthermore, since deployment and communication friction is minimized, it's possible to commoditize and commercialize our processes, by offering the either the diagram (it's our IP!!!), or the service workers, or both.
+
+# Hackathon Example:
+
+## Implementation
 
 - Orchestrator: Camunda 8
   - Containers deployed on VM with `docker-compose` without writing any additional code
@@ -43,8 +56,18 @@ To facilitate understanding between Business, Tech, and Machine. And to maximize
 - BPMN Diagram: Desktop Modeler ([download here](https://camunda.com/download/modeler/))
   - Simple diagram with automated task, human task, decision gateway
 
-![](diagram/diagram.svg)
+![](diagram/diagram.png)
 
 - Service Workers:
   - Subscribe to Zeebee cluster to control process and perform task
   - Deployed as NodeJS application on Azure App Service
+
+## Sneak peek of end product
+
+- Bird-eye view of overall processes. Identify bottleneck. Measure process failure and throughput:
+
+Process Overview:
+![Processes Overview](example/optimize_overview.png "Processes Overview")
+
+Branch Analysis:
+![Branch Analysis](example/optimize_branch_analysis.png "Branch Analysis")
