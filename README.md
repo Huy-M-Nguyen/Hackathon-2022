@@ -8,15 +8,15 @@ Also, once the project is completed, one quickly finds out that the orchestrated
 
 # Solution
 
-To facilliate understanding between Business, Tech, and Machine. And to maximize reusability of automated orchestrated process. I propose 2-throng approaches
+To facilitate understanding between Business, Tech, and Machine. And to maximize reusability of automated orchestrated process. I propose 2-pronged approaches
 
 ## 1. Processes as code
 
 - Executable BPMN/DMN diagram as the common language between Business, Tech, and Machine:
-  - BPMN/DMN standard is internationally regconized and used in many orchestration system
-  - Busiess experts build their requirements in BPMN/DMN visual model diagram. They are now the architects of the process.
-  - Machine (the Orchestrator) intepret and execute the BPMN/DMN model
-  - Tech experts now only need to focus on writing glue service to link workers (automated or manual), and deploy approriate infrastructure for the system.
+  - BPMN/DMN standard is internationally recognized and used in many orchestration system
+  - Business experts build their requirements in BPMN/DMN visual model diagram. They are now the architects of the process.
+  - Machine (the Orchestrator) interpret and execute the BPMN/DMN model
+  - Tech experts now only need to focus on writing glue service to link workers (automated or manual), and deploy appropriate infrastructure for the system.
   - Instead of the usual telephone game, the communication now looks like a star, with BPMN/DMN diagram in the middle
 - The Machine Orchestrator (Camunda 8 in this example) will run any standard-compliant BPMN/DMN. Camunda 8 is self-contained and relies on BPMN/DMN to execute:
   - Business experts are functionally writing code to Orchestrator using diagram.
@@ -27,7 +27,7 @@ To facilliate understanding between Business, Tech, and Machine. And to maximize
 ## 2. Loosely-coupled microservices
 
 - Orchestrator is self-contained service that needs only to read BPMN/DMN model, call Service Workers specified in the diagram, and record its history for audit later.
-- Service Workers are responsible for actual work, and seperated from Orchestrator:
+- Service Workers are responsible for actual work, and separated from Orchestrator:
   - Workers can be an external service, an internal call. It can be automated, manual, or just another child process.
   - Tech experts write glue service, and can re-use them for different Orchestrators
   - It can be easily packaged as a container, since BPMN/DMN process encourages writing decoupled service
@@ -39,7 +39,7 @@ To facilliate understanding between Business, Tech, and Machine. And to maximize
 
 - Orchestrator: Camunda 8
   - Containers deployed on VM with `docker-compose` without writing any additional code
-  - Come with application to monitor and optimzie processes
+  - Come with application to monitor and optimize processes
 - BPMN Diagram: Desktop Modeler ([download here](https://camunda.com/download/modeler/))
   - Simple diagram with automated task, human task, decision gateway
 
